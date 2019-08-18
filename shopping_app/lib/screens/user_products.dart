@@ -17,7 +17,9 @@ class UserProducts extends StatelessWidget {
               icon: Icon(
                 Icons.add,
               ),
-              onPressed: () {},
+              onPressed: () {
+                  Navigator.of(context).pushNamed('/edit-products');
+              },
             )
           ],
         ),
@@ -28,6 +30,7 @@ class UserProducts extends StatelessWidget {
           child: ListView.builder(
             itemBuilder: (ctx, i) => Column(children: [
                   UserProductItem(
+                    productData.products[i].id,
                     productData.products[i].title,
                     productData.products[i].imageUrl,
                   ),

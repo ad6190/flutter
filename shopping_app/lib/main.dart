@@ -8,6 +8,7 @@ import './screens/cart.dart';
 import './providers/orders.dart';
 import './screens/orders.dart';
 import './screens/user_products.dart';
+import './screens/edit_product.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
           '/product-details': (ctx) => ProductDetail(),
           '/cart-detail': (ctx) => Cart(),
           '/order-screen': (ctx) => OrdersScreen(),
-          '/user-products': (ctx) => UserProducts()
+          '/user-products': (ctx) => UserProducts(),
+          '/edit-products': (ctx) => EditProductScreen()
         },
 
       ),
